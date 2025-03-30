@@ -1,0 +1,280 @@
+[
+    {
+        "question": "What does EC2 stand for in AWS?",
+        "options": ["Elastic Compute Cloud", "Extended Cloud Computing", "Enterprise Compute Cloud", "Elastic Cloud Container"],
+        "answer": "Elastic Compute Cloud"
+    },
+    {
+        "question": "Which AWS service is used for object storage?",
+        "options": ["EC2", "EBS", "S3", "RDS"],
+        "answer": "S3"
+    },
+    {
+        "question": "Which database service is fully managed and designed for relational databases?",
+        "options": ["DynamoDB", "RDS", "Redshift", "ElastiCache"],
+        "answer": "RDS"
+    },
+    {
+        "question": "What is the main purpose of AWS IAM?",
+        "options": ["Identity and Access Management", "Internet and Account Management", "Infrastructure Automation Module", "Instance Access Monitoring"],
+        "answer": "Identity and Access Management"
+    },
+    {
+        "question": "Which AWS service provides a serverless computing environment?",
+        "options": ["EC2", "Lambda", "ECS", "Fargate"],
+        "answer": "Lambda"
+    },
+    {
+        "question": "What type of database is DynamoDB?",
+        "options": ["Relational", "Document-based", "Key-Value", "Graph"],
+        "answer": "Key-Value"
+    },
+    {
+        "question": "Which service allows you to store and retrieve messages between distributed applications?",
+        "options": ["SNS", "SQS", "SES", "CloudFront"],
+        "answer": "SQS"
+    },
+    {
+        "question": "Which AWS service provides a content delivery network (CDN)?",
+        "options": ["CloudFront", "S3", "Route 53", "VPC"],
+        "answer": "CloudFront"
+    },
+    {
+        "question": "Which AWS service is used to run containers without managing servers?",
+        "options": ["EKS", "ECS", "Fargate", "All of the above"],
+        "answer": "All of the above"
+    },
+    {
+        "question": "What is the default storage class in Amazon S3?",
+        "options": ["Glacier", "Standard", "One Zone-IA", "Intelligent-Tiering"],
+        "answer": "Standard"
+    },
+    {
+        "question": "Which AWS database service is specifically designed for data warehousing?",
+        "options": ["RDS", "DynamoDB", "ElastiCache", "Redshift"],
+        "answer": "Redshift"
+    },
+    {
+        "question": "Which service is used to create a Virtual Private Cloud?",
+        "options": ["VPC", "Route 53", "Direct Connect", "CloudTrail"],
+        "answer": "VPC"
+    },
+    {
+        "question": "Which AWS service is a managed Kubernetes service?",
+        "options": ["ECS", "Fargate", "EKS", "Lambda"],
+        "answer": "EKS"
+    },
+    {
+        "question": "What is the purpose of AWS Route 53?",
+        "options": ["Hosting websites", "Domain Name System (DNS) management", "File storage", "Network monitoring"],
+        "answer": "Domain Name System (DNS) management"
+    },
+    {
+        "question": "Which AWS service provides monitoring and logging for AWS resources?",
+        "options": ["CloudTrail", "CloudWatch", "Trusted Advisor", "IAM"],
+        "answer": "CloudWatch"
+    },
+    {
+        "question": "What type of storage is Amazon EBS?",
+        "options": ["Object Storage", "Block Storage", "File Storage", "Cold Storage"],
+        "answer": "Block Storage"
+    },
+    {
+        "question": "Which AWS service helps automate infrastructure deployment?",
+        "options": ["CloudFormation", "Elastic Beanstalk", "OpsWorks", "All of the above"],
+        "answer": "All of the above"
+    },
+    {
+        "question": "What AWS service is used for real-time stream processing?",
+        "options": ["SNS", "Kinesis", "SQS", "SES"],
+        "answer": "Kinesis"
+    },
+    {
+        "question": "Which service provides fully managed NoSQL databases?",
+        "options": ["RDS", "DynamoDB", "Redshift", "Aurora"],
+        "answer": "DynamoDB"
+    },
+    {
+        "question": "What AWS service is used for managing encryption keys?",
+        "options": ["IAM", "CloudHSM", "KMS", "Cognito"],
+        "answer": "KMS"
+    },
+    {
+        "question": "Which AWS service helps track API calls?",
+        "options": ["CloudWatch", "CloudTrail", "AWS Config", "GuardDuty"],
+        "answer": "CloudTrail"
+    },
+    {
+        "question": "What is AWS Lambda's pricing model?",
+        "options": ["Per instance", "Per second", "Per request and execution time", "Flat monthly fee"],
+        "answer": "Per request and execution time"
+    },
+    {
+        "question": "Which AWS service allows you to run code at the edge locations?",
+        "options": ["CloudFront", "Lambda@Edge", "Route 53", "Direct Connect"],
+        "answer": "Lambda@Edge"
+    },
+    {
+        "question": "Which AWS service provides a managed Apache Kafka solution?",
+        "options": ["SNS", "MSK", "Kinesis", "MQ"],
+        "answer": "MSK"
+    },
+    {
+        "question": "Which AWS service is used for large-scale parallel computing?",
+        "options": ["Batch", "ECS", "EMR", "SageMaker"],
+        "answer": "EMR"
+    },
+    {
+        "question": "Which AWS AI service provides natural language processing?",
+        "options": ["Lex", "Polly", "Comprehend", "Rekognition"],
+        "answer": "Comprehend"
+    },
+    {
+        "question": "Which AWS security service detects threats and unauthorized activity?",
+        "options": ["GuardDuty", "Macie", "IAM", "CloudTrail"],
+        "answer": "GuardDuty"
+    },
+    {
+        "question": "Which AWS service is used for hybrid cloud storage?",
+        "options": ["EFS", "S3", "Storage Gateway", "EBS"],
+        "answer": "Storage Gateway"
+    },
+    {
+        "question": "Which AWS service enables real-time machine learning predictions?",
+        "options": ["SageMaker", "Comprehend", "Forecast", "Personalize"],
+        "answer": "SageMaker"
+    },
+    
+        {
+            "question": "Your company is running an application on EC2 instances. The application needs to scale automatically based on incoming traffic. Which AWS service should you use?",
+            "options": ["Auto Scaling Groups", "Elastic Load Balancer", "Lambda", "CloudFormation"],
+            "answer": "Auto Scaling Groups"
+        },
+        {
+            "question": "You need to store a large number of infrequently accessed files with high durability at the lowest cost. Which storage class should you choose?",
+            "options": ["S3 Standard", "S3 Intelligent-Tiering", "S3 One Zone-IA", "S3 Glacier Deep Archive"],
+            "answer": "S3 Glacier Deep Archive"
+        },
+        {
+            "question": "A client wants to host a static website with high availability and low latency for a global audience. What combination of services should they use?",
+            "options": ["EC2 and Route 53", "S3 and CloudFront", "EBS and CloudFront", "ECS and ELB"],
+            "answer": "S3 and CloudFront"
+        },
+        {
+            "question": "Your company processes real-time streaming data from IoT sensors. Which AWS service should you use for data ingestion?",
+            "options": ["SNS", "SQS", "Kinesis", "MQ"],
+            "answer": "Kinesis"
+        },
+        {
+            "question": "You need to restrict access to an S3 bucket to a specific VPC. Which method should you use?",
+            "options": ["Bucket Policy", "IAM Role", "VPC Endpoint Policy", "Security Group"],
+            "answer": "VPC Endpoint Policy"
+        },
+        {
+            "question": "A developer needs to automatically deploy and manage application infrastructure as code. Which AWS service should they use?",
+            "options": ["OpsWorks", "CloudFormation", "Elastic Beanstalk", "EKS"],
+            "answer": "CloudFormation"
+        },
+        {
+            "question": "Your team needs a managed database solution for an e-commerce application with high transactional consistency. Which AWS database service should you use?",
+            "options": ["DynamoDB", "RDS", "Redshift", "ElastiCache"],
+            "answer": "RDS"
+        },
+        {
+            "question": "A healthcare company must comply with HIPAA regulations while using AWS for data processing. Which service can help encrypt sensitive data at rest?",
+            "options": ["IAM", "KMS", "GuardDuty", "CloudTrail"],
+            "answer": "KMS"
+        },
+        {
+            "question": "A startup wants to analyze customer purchase behavior using a data warehouse. Which AWS service should they use?",
+            "options": ["DynamoDB", "RDS", "Redshift", "S3"],
+            "answer": "Redshift"
+        },
+        {
+            "question": "A media company wants to transcode video files dynamically when users request different formats. Which AWS service should they use?",
+            "options": ["Elastic Transcoder", "Lambda", "Fargate", "MediaLive"],
+            "answer": "Elastic Transcoder"
+        },
+        {
+            "question": "Your team wants to run machine learning training jobs at scale with minimal infrastructure management. Which AWS service is the best fit?",
+            "options": ["Comprehend", "SageMaker", "Rekognition", "Lex"],
+            "answer": "SageMaker"
+        },
+        {
+            "question": "Your company wants to migrate an on-premises database to AWS with minimal downtime. Which AWS service should you use?",
+            "options": ["AWS Backup", "Database Migration Service (DMS)", "Snowball", "RDS Read Replica"],
+            "answer": "Database Migration Service (DMS)"
+        },
+        {
+            "question": "You are designing a highly available, fault-tolerant application that should continue to work even if an entire AWS region goes down. What strategy should you use?",
+            "options": ["Deploy in a single Availability Zone", "Use Multi-AZ deployments", "Use Multi-Region deployments", "Rely on AWS Auto Scaling"],
+            "answer": "Use Multi-Region deployments"
+        },
+        {
+            "question": "Your organization requires a VPN connection between an on-premises data center and AWS. Which AWS service should you use?",
+            "options": ["AWS Direct Connect", "AWS Site-to-Site VPN", "AWS Shield", "AWS Transit Gateway"],
+            "answer": "AWS Site-to-Site VPN"
+        },
+        {
+            "question": "A fintech company needs to detect fraudulent transactions in real-time. Which AWS service can help with anomaly detection?",
+            "options": ["SageMaker", "Fraud Detector", "GuardDuty", "Comprehend"],
+            "answer": "Fraud Detector"
+        },
+        {
+            "question": "Your e-commerce platform experiences sudden traffic spikes during flash sales. Which AWS service should you use to handle the increased load?",
+            "options": ["Auto Scaling", "EC2 Spot Instances", "CloudTrail", "Elastic Beanstalk"],
+            "answer": "Auto Scaling"
+        },
+        {
+            "question": "Your company wants to allow employees to authenticate to AWS services using corporate credentials. Which AWS service should you use?",
+            "options": ["IAM", "AWS SSO", "Cognito", "KMS"],
+            "answer": "AWS SSO"
+        },
+        {
+            "question": "Your application must run serverless and respond to HTTP requests. Which AWS service should you use?",
+            "options": ["EC2 with ALB", "ECS", "API Gateway with Lambda", "CloudFront"],
+            "answer": "API Gateway with Lambda"
+        },
+        {
+            "question": "A company wants to automate patch management for its EC2 instances. Which AWS service should they use?",
+            "options": ["AWS Config", "AWS Systems Manager Patch Manager", "GuardDuty", "CloudTrail"],
+            "answer": "AWS Systems Manager Patch Manager"
+        },
+        {
+            "question": "Your team wants to build a chatbot to answer customer inquiries. Which AWS service should you use?",
+            "options": ["Rekognition", "Lex", "Polly", "Transcribe"],
+            "answer": "Lex"
+        },
+        {
+            "question": "Your company wants to provide multi-factor authentication (MFA) for user sign-ins. Which AWS service should you use?",
+            "options": ["IAM", "Cognito", "AWS SSO", "Shield"],
+            "answer": "Cognito"
+        },
+        {
+            "question": "You need to secure a web application from common security threats such as SQL injection and XSS. Which AWS service should you use?",
+            "options": ["AWS Shield", "AWS WAF", "GuardDuty", "CloudTrail"],
+            "answer": "AWS WAF"
+        },
+        {
+            "question": "You want to automatically convert text into speech for a customer support application. Which AWS service should you use?",
+            "options": ["Comprehend", "Polly", "Rekognition", "Transcribe"],
+            "answer": "Polly"
+        },
+        {
+            "question": "Your organization wants to detect personally identifiable information (PII) in stored text data. Which AWS service can help?",
+            "options": ["Macie", "GuardDuty", "IAM", "Comprehend"],
+            "answer": "Macie"
+        },
+        {
+            "question": "A development team needs to manage multiple versions of application code securely. Which AWS service should they use?",
+            "options": ["CodeCommit", "CodePipeline", "CodeBuild", "CodeDeploy"],
+            "answer": "CodeCommit"
+        },
+        {
+            "question": "Your company is launching a global application that needs low-latency access for users worldwide. What AWS solution should you implement?",
+            "options": ["CloudFront", "Route 53 Latency-Based Routing", "AWS Global Accelerator", "All of the above"],
+            "answer": "All of the above"
+        }
+    
+    
+]
