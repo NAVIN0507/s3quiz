@@ -31,6 +31,7 @@ useEffect(()=>{
       }
     }
     fetchQuizz();
+    startQuiz();
 } , [])
 
 
@@ -81,25 +82,25 @@ useEffect(()=>{
   const shuffleArray = (array: any[]) => [...array].sort(() => Math.random() - 0.5);
 
   return (
-    <div className="flex justify-center items-center h-screen bg-gradient-to-r from-pink-300 to-pink-100">
-      <div className="bg-white p-6 rounded-xl shadow-lg w-96 text-center overflow-y-auto max-h-[90vh]">
-        {!quizStarted && !quizFinished && (
+    <div className="flex justify-center items-center h-screen ">
+      <div className="bg-white  rounded-xl shadow-lg w-11/12 border border-t-2 p-20  overflow-y-auto max-h-[90vh]">
+        {/* {!quizStarted && !quizFinished && (
           <button onClick={startQuiz} className="bg-pink-500 text-white py-2 px-4 rounded-lg text-lg hover:bg-pink-700">
             Start Quiz
           </button>
-        )}
+        )} */}
 
         {quizStarted && !quizFinished && questions.length > 0 && (
           <div>
             <h2 className="text-lg font-bold">Q{currentQuestionIndex + 1}: {questions[currentQuestionIndex]?.question}</h2>
-            <div className="mt-4">
+            <div className="mt-7">
               {questions[currentQuestionIndex]?.options.map((option, index) => (
-                <button key={index} onClick={() => selectAnswer(option)} className="block w-full p-2 my-2 bg-blue-500 text-white rounded-lg hover:bg-blue-700">
+                <button key={index} onClick={() => selectAnswer(option)} className="block w-[150px] mt-2  p-2 my-2 bg-blue-500 cursor-pointer text-white rounded-lg hover:bg-blue-700">
                   {option}
                 </button>
               ))}
             </div>
-            <p className="mt-2 text-sm">Attempted: {attemptedQuestions} / {questions.length}</p>
+            <p className="mt-10 text-sm">Attempted: {attemptedQuestions} / {questions.length}</p>
             <div className="w-full bg-gray-300 rounded-md overflow-hidden mt-2">
               <div className="bg-red-500 h-2" style={{ width: `${((currentQuestionIndex + 1) / questions.length) * 100}%` }}></div>
             </div>
@@ -121,7 +122,7 @@ useEffect(()=>{
                 </div>
               ))}
             </div>
-            <button onClick={restartQuiz} className="bg-pink-500 text-white py-2 px-4 rounded-lg text-lg mt-4 hover:bg-pink-700">
+            <button onClick={restartQuiz} className=" py-2 px-4 rounded-lg text-lg mt-7 hover:-translate-y-2 duration-500 ease-in-out cursor-pointer bg-black text-white">
               Restart Quiz
             </button>
           </div>

@@ -2,6 +2,15 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog"
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -27,7 +36,20 @@ export default function Home() {
             transition={{ duration: 2.0 }}
             className="mt-10 px-20"
           >
-            <Button className="w-[150px] h-14 px-6 py-3 text-lg cursor-pointer">Start Quiz</Button>
+            <Dialog>
+  <DialogTrigger> <Button className="w-[150px] h-14 px-6 py-3 text-lg cursor-pointer">Start Quiz</Button></DialogTrigger>
+  <DialogContent>
+    <DialogHeader className="p-10">
+      
+      <DialogTitle>
+        Once test is started don't skip the questions.
+        You can't go back
+      </DialogTitle>
+      <Link href={"/questions"}><Button className="w-full h-14 mt-5 cursor-pointer text-xl">Take Test Now</Button></Link>
+    </DialogHeader>
+  </DialogContent>
+</Dialog>
+           
           </motion.div>
         </motion.div>
 
