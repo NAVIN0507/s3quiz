@@ -3,10 +3,7 @@ import Quiz from "@/lib/models/quiz.model";
 export async function GET(){
     connectToDB();
     const quiz = await Quiz.find();
-    return Response.json({
-        success:true,
-        data:quiz
-    })
+    return Response.json(quiz)
 }
 
 export async function POST(request:Request){
