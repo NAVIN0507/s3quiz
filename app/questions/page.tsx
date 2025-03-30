@@ -1,5 +1,6 @@
 "use client";
 
+import { fetchData } from "@/lib/fetch";
 import { useState, useEffect } from "react";
 
 interface Question {
@@ -18,20 +19,20 @@ export default function QuizApp() {
   const [quizStarted, setQuizStarted] = useState(false);
   const [quizFinished, setQuizFinished] = useState(false);
   let timer: NodeJS.Timeout;
-
-useEffect(() => {
-  fetch("http://localhost:3000/api/quiz")
-    .then((response) => response.json())
-    .then((data) => {
-      if (Array.isArray(data)) {
-        setQuestions(shuffleArray(data));
+useEffect(()=>{
+    const fetchQuizz = async()=>{
+        const quizz = await fetchData();
+          if (Array.isArray(quizz)) {
+        const shuffled = shuffleArray(quizz)
+        setQuestions(shuffled.slice(0 , 20))
       } else {
-        console.error("API did not return an array:", data);
+        console.error("API did not return an array:", quizz);
         setQuestions([]); // Ensure it's always an array
       }
-    })
-    .catch((error) => console.error("Error loading questions:", error));
-}, []);
+    }
+    fetchQuizz();
+} , [])
+
 
   useEffect(() => {
     if (quizStarted && timeLeft > 0) {
