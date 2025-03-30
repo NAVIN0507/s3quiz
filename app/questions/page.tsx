@@ -1,5 +1,6 @@
 "use client";
 
+import Chart from "@/components/Chart";
 import { fetchData } from "@/lib/fetch";
 import { useState, useEffect } from "react";
 
@@ -110,6 +111,7 @@ useEffect(()=>{
 
         {quizFinished && (
           <div>
+            <Chart/>
             <h2 className="text-lg font-bold">Your Score: {score} / {questions.length}</h2>
             <p className="text-sm">Total Attempted Questions: {attemptedQuestions} / {questions.length}</p>
             <div className="mt-4">
