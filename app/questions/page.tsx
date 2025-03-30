@@ -33,6 +33,7 @@ useEffect(()=>{
     }
     fetchQuizz();
     startQuiz();
+    window.scrollTo({top:0})
 } , [])
 
 
@@ -84,7 +85,7 @@ useEffect(()=>{
 
   return (
     <div className="flex justify-center items-center h-screen ">
-      <div className="bg-white  rounded-xl shadow-lg w-full border border-t-2 p-20  overflow-y-auto max-h-screen">
+      <div className="  w-full p-20  overflow-y-auto max-h-screen">
         {/* {!quizStarted && !quizFinished && (
           <button onClick={startQuiz} className="bg-pink-500 text-white py-2 px-4 rounded-lg text-lg hover:bg-pink-700">
             Start Quiz
@@ -92,7 +93,7 @@ useEffect(()=>{
         )} */}
 
         {quizStarted && !quizFinished && questions.length > 0 && (
-          <div>
+          <div className="min-h-screen">
             <h2 className="text-lg font-bold">Q{currentQuestionIndex + 1}: {questions[currentQuestionIndex]?.question}</h2>
             <div className="mt-7">
               {questions[currentQuestionIndex]?.options.map((option, index) => (
