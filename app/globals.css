@@ -120,3 +120,7 @@
     @apply bg-background text-foreground;
   }
 }
+
+.landing-layout{
+  @apply  mx-auto my-auto mt-[120px] border border-t-2 flex w-11/12 h-[600px] rounded-2xl shadow-2xl
+}
