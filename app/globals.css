@@ -121,6 +121,6 @@
   }
 }
 
-.landing-layout{
-  @apply  mx-auto my-auto mt-[120px] border border-t-2 flex w-11/12 h-[600px] rounded-2xl shadow-2xl
+.landing-layout {
+  @apply flex flex-col lg:flex-row items-center justify-center w-full h-auto lg:h-[600px] rounded-2xl shadow-2xl border border-gray-200 mt-[120px];
 }
