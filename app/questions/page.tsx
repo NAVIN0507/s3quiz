@@ -84,7 +84,7 @@ useEffect(()=>{
 
   return (
     <div className="flex justify-center items-center h-screen ">
-      <div className="bg-white  rounded-xl shadow-lg w-11/12 border border-t-2 p-20  overflow-y-auto max-h-[90vh]">
+      <div className="bg-white  rounded-xl shadow-lg w-full border border-t-2 p-20  overflow-y-auto max-h-screen">
         {/* {!quizStarted && !quizFinished && (
           <button onClick={startQuiz} className="bg-pink-500 text-white py-2 px-4 rounded-lg text-lg hover:bg-pink-700">
             Start Quiz
@@ -111,9 +111,14 @@ useEffect(()=>{
 
         {quizFinished && (
           <div>
-            <Chart/>
-            <h2 className="text-lg font-bold">Your Score: {score} / {questions.length}</h2>
-            <p className="text-sm">Total Attempted Questions: {attemptedQuestions} / {questions.length}</p>
+            <div className="flex flex-row ">
+           
+            {/* <h2 className="text-lg font-bold">Your Score: {score} / {questions.length}</h2> */}
+            {/* <p className="text-sm">Total Attempted Questions: {attemptedQuestions} / {questions.length}</p> */}
+           
+          
+            </div>
+              <Chart score={score.toString()}/>
             <div className="mt-4">
               <h3 className="text-lg font-semibold">Review Your Answers:</h3>
               {userAnswers.map((ans, index) => (
@@ -124,7 +129,7 @@ useEffect(()=>{
                 </div>
               ))}
             </div>
-            <button onClick={restartQuiz} className=" py-2 px-4 rounded-lg text-lg mt-7 hover:-translate-y-2 duration-500 ease-in-out cursor-pointer bg-black text-white">
+            <button onClick={restartQuiz} className=" py-2 px-4 rounded-lg text-lg mt-7 w-full hover:-translate-y-2 duration-500 ease-in-out cursor-pointer bg-black text-white">
               Restart Quiz
             </button>
           </div>
